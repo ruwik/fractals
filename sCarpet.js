@@ -1,4 +1,4 @@
-let createZero = function(size){
+let createZeroMatrix = function(size){
   let list = [];
   for (let index = 0;index < size;index++) {
     list.push(0);
@@ -22,7 +22,7 @@ let sCarpetList = function(iteration){
       let number1 = length/3;
       let number2 = 2*(length/3);
       if(checker > number1-1 && checker < number2){
-        array1 = createZero(array.length);
+        array1 = createZeroMatrix(array.length);
       };
       array = array.concat(array1).concat(array);
       outlist = outlist.concat([array]);
